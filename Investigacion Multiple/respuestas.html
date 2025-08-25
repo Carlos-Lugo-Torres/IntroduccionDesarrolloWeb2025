@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Investigación Multiple</title>
+    </head>
+    <body>
+        <h1>Respuestas a Investigación Multiple</h1>
+        <h2>Diferencias entre las etiquetas</h2>
+        <h3><code>&lt;b&gt;</code> vs. <code>&lt;strong&gt;</code></h3>
+        
+        <ul>
+            <li><b>Visual:</b> ambos se muestran en negritas por defecto.</li>
+            <li>
+                <b>Semántica:</b>
+                <ul>
+                    <li><code>&lt;b&gt;</code> resalta visualmente un texto sin indicar que tenga importancia especial.</li>
+                    <li><code>&lt;strong&gt;</code> indica que el texto es muy importante, urgente o relevante.</li>
+                </ul>
+            </li>
+            <li><b>Implicaciones SEO:</b> Google y lectores de pantalla interpretan <code>&lt;strong&gt;</code> como un marcador semántico de relevancia, por lo que puede mejorar ligeramente la importancia de esas palabras clave. <code>&lt;b&gt;</code> no tiene peso semántico, es solo presentación.</li>
+        </ul>
+
+        <h3><code>&lt;i&gt;</code> vs. <code>&lt;em&gt;</code></h3>
+
+        <ul>
+            <li><b>Visual:</b> ambos se muestran en cursiva.</li>
+            <li>
+                <b>Semántica:</b>
+                <ul>
+                    <li><code>&lt;i&gt;</code> se usa para dar un estilo diferente al texto sin transmitir énfasis.</li>
+                    <li><code>&lt;em&gt;</code> indica énfasis en la entonación o importancia contextual dentro de una oración. Puede anidarse para marcar aún más énfasis.</li>
+                </ul>
+            </li>
+            <li><b>Implicaciones SEO: </b><code>&lt;em&gt;</code> tiene valor semántico, por lo que ayuda a Google a entender que el término es relevante en contexto. <code>&lt;em&gt;</code> solo es visual.</li>
+        </ul>
+
+        <h3><code>&lt;s&gt;</code> vs. <code>&lt;del&gt;</code></h3>
+
+        <ul>
+            <li><b>Visual:</b> ambos muestran el texto con línea tachada.</li>
+            <li>
+                <b>Semántica:</b>
+                <ul>
+                    <li><code>&lt;s&gt;</code> indica que el texto ya no es relevante o preciso, pero sin implicar una eliminación formal.</li>
+                    <li><code>&lt;del&gt;</code> indica que el texto ha sido eliminado en una corrección, edición o cambio de versión. Suele ir acompañado de <code>&lt;ins&gt;</code> (texto añadido).</li>
+                </ul>
+            </li>
+            <li>
+                <b>Implicaciones SEO:</b>
+                <ul>
+                    <li><code>&lt;del&gt;</code> comunica a Google y a tecnologías de accesibilidad que ese contenido fue eliminado, útil en documentos legales, versiones de contratos, ediciones.</li>
+                    <li><code>&lt;s&gt;</code> es más estético y no tiene valor semántico fuerte.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h2>Elementos de Línea y de Bloque en HTML</h2>
+        
+        <h3>Elementos de línea</h3>
+
+        <p>Un elemento de línea en HTML es aquel que no comienza en una nueva línea, sino que se coloca dentro del flujo del texto. Ejemplos:</p>
+        <ul>
+            <li><b><code>&lt;span&gt;</code>:</b> contenedor genérico en línea, útil para aplicar estilo.</li>
+            <li><b><code>&lt;a&gt;</code>:</b> sirve para poner hipervínculos.</li>
+            <li><b><code>&lt;strong&gt;</code>:</b> resalta importancia (texto importante).</li>
+            <li><b><code>&lt;em&gt;</code>:</b> indica énfasis.</li>
+            <li><b><code>&lt;img&gt;</code>:</b> inserta una imagen dentro del flujo de texto.</li>
+        </ul>
+        <h3>Elementos de bloque</h3>
+        <p>Un elemento de bloque en HTML comienza en una nueva línea y ocupa todo el ancho disponible. Ejemplos:</p>
+        <ul>
+            <li><b><code>&lt;div&gt;</code>:</b> contenedor genérico de bloque, útil para agrupar contenido.</li>
+            <li><b><code>&lt;p&gt;</code>:</b> define un párrafo.</li>
+            <li><b><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>:</b> definen encabezados de diferentes niveles.</li>
+            <li><b><code>&lt;ul&gt;</code> y <code>&lt;ol&gt;</code>:</b> listas no ordenadas y ordenadas.</li>
+            <li><b><code>&lt;table&gt;</code>:</b> define una tabla.</li>
+        </ul>
+
+        <h2>Formularios y sus campos</h2>
+
+        <h3>Formulario (repaso)</h3>
+
+        <p>Un formulario en HTML es una estructura que permite a los usuarios introducir y enviar datos a un servidor o procesarlos en la misma página.</p> 
+
+        <h3><code>&lt;input&gt;</code></h3>
+
+        <p>Se usa para introducir datos y tiene la propiedad <b>type</b>, que define qué tipo de entrada se espera. A continuación se muestran 7 usos distintos de type.</p>
+        
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"><br/>
+
+            <label for="email">Correo:</label>
+            <input type="email" id="email"><br/>
+
+            <label for="clave">Contraseña:</label>
+            <input type="password" id="password"><br/>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" min="1" max="99"><br/>
+
+            <label for="fecha">Fecha de nacimiento:</label>
+            <input type="date" id="fecha"><br/>
+
+            <label for="archivo">Subir archivo:</label>
+            <input type="file" id="archivo"><br/>
+
+            <label for="terminos">Acepto términos y condiciones:</label>
+            <input type="checkbox"><br/>
+        </form>
+
+        <h3><code>&lt;label&gt;</code></h3>
+
+        <p>Asocia un texto descriptivo a un campo del formulario. Mejora la accesibilidad y hace clickeable el texto.</p>
+
+        <form>
+            <label for="usuario">Usuario:</label>
+            <input type="text" id="usuario">
+        </form>
+
+        <h3><code>&lt;output&gt;</code></h3>
+
+        <p>Muestra un resultado calculado a partir de la interacción del usuario en el formulario.</p>
+
+        <form oninput="resultado.value=parseInt(a.value)+parseInt(b.value)">
+            <input type="number" id="a"> +
+            <input type="number" id="b"> =
+            <output></output>
+        </form>
+
+        <h3><code>&lt;progress&gt;</code></h3>
+
+        <p>Muestra una barra de progreso. Puede usarse para tareas en ejecución o cargas.</p>
+
+        <form>
+            <label for="progreso">Subida:</label>
+            <progress id="progreso" value="60" max="100">60%</progress>
+        </form>
+
+        <h3><code>&lt;select&gt;</code> y <code>&lt;option&gt;</code></h3>
+
+        <p>select crea un menú desplegable y option define las opciones dentro del menú.</p>
+
+        <form>
+            <label for="materias">País:</label>
+            <select id="materias">
+                <option>Programación Web</option>
+                <option>Redes por Computadora</option>
+                <option>Inteligencia Artificial</option>
+            </select>
+        </form>
+
+        <h3><code>&lt;textarea&gt;</code></h3>
+
+        <p>Campo de texto multilínea, útil para comentarios o descripciones largas.</p>
+
+        <form>
+            <textarea id="comentario" rows="4" cols="30"> </textarea>
+        </form>
+    </body>
+</html>
