@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <title>LM10 - Biografía de Lamine Yamal</title>
+    <style>
+        body {
+            background-color: #f2f6fc;
+            color: #222;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            color: #1a237e;
+            text-align: center;
+            text-shadow: 2px 2px 6px #b3c6ff;
+            text-decoration: underline;
+        }
+        h2 {
+            color: #3949ab;
+            text-align: left;
+            text-decoration: underline;
+        }
+        h3 {
+            color: #5c6bc0;
+            text-align: left;
+            text-decoration: underline;
+        }
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+        .header-container {
+            background-color: #e3eafc;
+            box-shadow: 0 2px 8px #b3c6ff;
+            border-bottom: 2px solid #3949ab;
+            padding-bottom: 10px;
+        }
+        .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 0;
+            margin-top: 10px;
+        }
+        .nav-list li a {
+            color: #3949ab;
+            font-weight: bold;
+            text-decoration: underline;
+            padding: 6px 14px;
+            border: 2px dotted #5c6bc0;
+            border-radius: 8px;
+            transition: background 0.2s, color 0.2s, border 0.2s;
+        }
+        .nav-list li a:hover {
+            background: #c5cae9;
+            color: #1a237e;
+            border: 2px solid #1a237e;
+        }
+        .img-circular {
+            border-radius: 50%;
+            box-shadow: 0 0 12px #b3c6ff;
+            border: 3px solid #3949ab;
+        }
+        .img-rectangular {
+            border-radius: 12px;
+            box-shadow: 0 0 10px #b3c6ff;
+            border: 2px solid #5c6bc0;
+            margin-bottom: 10px;
+        }
+        .section-box {
+            background: #fff;
+            border: 2px solid #b3c6ff;
+            border-radius: 16px;
+            box-shadow: 0 2px 12px #e3eafc;
+            padding: 18px;
+            margin-bottom: 24px;
+        }
+
+        @media (max-width: 400px) {
+            .img-familia {
+                display: none;
+            }
+            main {
+                background-color: #ffe0b2; 
+            }
+        }
+        @media (max-width: 700px) {
+            main {
+                background-color: #c8e6c9;
+            }
+        }
+        @media (max-width: 300px) {
+            main {
+                background-color: #ffccbc; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header-container">
+        <div> <center>
+            <span style="font-size: 2em; font-weight: bold;">Biografía de Lamine Yamal</span>
+            <br/>
+            <img src="imagenes/lamineJoven.jpg" width="200" alt="Lamine Yamal de joven" class="img-circular">
+        </center> </div> 
+        <nav>
+            <ul class="nav-list">
+                <li><a href="#biografia">Biografía General</a></li>
+                <li><a href="#barcelona">Recorrido en el Barcelona</a></li>
+                <li><a href="#seleccion">Recorrido en la Selección</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="https://www.instagram.com/lamineyamal/" target="_blank">Instagram</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+
+    <main>
+        <section id="biografia" class="section-box">
+            <article>
+                <h2>Biografía General</h2>
+                <img src="imagenes/lamineFamilia.jpeg" width="150" alt="Lamine Yamal con su familia" class="img-rectangular">
+                <h3>Datos Generales</h3>
+                <ul>
+                    <li><strong>Nombre completo:</strong> Lamine Yamal Nasraoui Ebana</li>
+                    <li><strong>Fecha de nacimiento:</strong> 13 de julio de 2007</li>
+                    <li><strong>Lugar de nacimiento:</strong> Esplugues de Llobregat, Barcelona, España</li>
+                    <li><strong>Edad:</strong> 18 años (en 2025)</li>
+                    <li><strong>Nacionalidad:</strong> Española (con raíces marroquíes y ecuatoguineanas)</li>
+                    <li><strong>Altura:</strong> 1,80 m (aprox.)</li>
+                    <li><strong>Peso:</strong> 65 kg (aprox.)</li>
+                    <li><strong>Posición en el campo:</strong> Extremo derecho</li>
+                    <li><strong>Pie dominante:</strong> Zurdo</li>
+                </ul>
+                <h3>Vida en General</h3>
+                <p>
+                    Lamine Yamal Nasraoui Ebana nació el 13 de julio de 2007 en Esplugues de Llobregat, Barcelona. Desde sus primeros años mostró una energía desbordante y un vínculo muy fuerte con el fútbol. Su entorno familiar, con raíces marroquíes y ecuatoguineanas, le transmitió disciplina y humildad. En la escuela destacó por su madurez y liderazgo, y en el fútbol por su creatividad y visión de juego. El apoyo de su familia fue clave para su desarrollo, y desde niño fue considerado un talento especial en su entorno.
+                </p>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="barcelona" class="section-box">
+            <article>
+                <h2>Recorrido en el Barcelona</h2>
+                <img src="imagenes/lamineBarca.jpeg" width="400" alt="Lamine Yamal jugando con el Barcelona" class="img-rectangular">
+                <h3>Inicios en la cantera</h3>
+                <p>
+                    Lamine Yamal fue captado por el FC Barcelona y se formó en La Masia. Destacó por su técnica y liderazgo, jugando en categorías superiores a su edad.
+                </p>
+                <h3>Ascenso hacia el juvenil A</h3>
+                <ul>
+                    <li>Era capaz de desequilibrar en cualquier momento.</li>
+                    <li>Mostraba una comprensión del juego poco común en un adolescente.</li>
+                    <li>Combinaba creatividad con gran efectividad en el último pase y definición.</li>
+                </ul>
+                <h3>El Salto al Primer Equipo</h3>
+                <ol>
+                    <li>Convocado al primer equipo con 15 años.</li>
+                    <li>Debut oficial en LaLiga en abril de 2023 contra el Real Betis.</li>
+                    <li>Jugador más joven en debutar en liga con el Barça en el siglo XXI.</li>
+                </ol>
+                <h3>Consolidación como Promesa del Club</h3>
+                <ul>
+                    <li>Jugador más joven en disputar la Champions League con el Barcelona.</li>
+                    <li>Primeras asistencias y actuaciones destacadas en partidos de élite.</li>
+                    <li>Considerado una de las grandes joyas de la cantera.</li>
+                </ul>
+                <h3>Renovación Estratégica</h3>
+                <p>
+                    En octubre de 2023 firmó su primer contrato profesional con el Barça, con una cláusula de rescisión de 1.000 millones de euros.
+                </p>
+                <h3>Estilo y Rol en el Barça</h3>
+                <ul>
+                    <li>Encara rivales en el uno contra uno con confianza.</li>
+                    <li>Ataca desde la banda para asistir o rematar.</li>
+                    <li>Crea desequilibrios en partidos cerrados.</li>
+                    <li>Se adapta a distintos esquemas tácticos.</li>
+                </ul>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="seleccion" class="section-box">
+            <article>
+                <h2>Recorrido en la Selección</h2>
+                <img src="imagenes/lamineSeleccion.jpeg" width="400" alt="Lamine Yamal celebrando con la Selección Española" class="img-rectangular">
+                <h3>Primeros pasos en categorías inferiores</h3>
+                <p>
+                    Antes de llegar a la élite, Lamine Yamal fue convocado por las categorías juveniles de España, donde rápidamente destacó por encima de sus compañeros. Su talento natural lo convirtió en una de las piezas más desequilibrantes en torneos sub-15 y sub-17.
+                </p>
+                <ul>
+                    <li>Capacidad para jugar sin miedo pese a la presión.</li>
+                    <li>Facilidad para romper defensas en el uno contra uno.</li>
+                    <li>Inteligencia para adaptarse a distintos esquemas de juego.</li>
+                </ul>
+                <p>
+                    Su rendimiento reforzó la idea de que era un jugador con proyección mundial, capaz de competir contra futbolistas más experimentados aun siendo muy joven.
+                </p>
+                <h3>Convocatoria con la Absoluta</h3>
+                <p>
+                    En agosto de 2023, con solo 16 años, fue convocado por primera vez a la Selección Española absoluta por Luis de la Fuente. La noticia generó gran impacto por ser uno de los debuts más tempranos en la historia de España.
+                </p>
+                <h3>Debut Histórico</h3>
+                <p>
+                    El 8 de septiembre de 2023 debutó con España en la clasificación para la Eurocopa 2024 frente a Georgia, con 16 años y 57 días.
+                </p>
+                <ul >
+                    <li>Jugador más joven en debutar con la Selección Española absoluta.</li>
+                    <li>Goleador más joven en la historia de la selección.</li>
+                </ul>
+                <h3>Consolidación en el Equipo Nacional</h3>
+                <p>
+                    Tras su debut, continuó siendo parte de las convocatorias y participó en partidos clave de clasificación, convirtiéndose en una pieza importante en la renovación de la selección.
+                </p>
+                <h3>Eurocopa 2024</h3>
+                <p>
+                    En el verano de 2024 formó parte de la plantilla española en la Eurocopa en Alemania, consolidándose como uno de los jugadores más destacados del torneo.
+                </p>
+                <h3>Lista cronológica de hitos con España</h3>
+                <ol>
+                    <li><strong>Categorías inferiores (Sub-15, Sub-17):</strong> Primeras convocatorias con España, destacando como figura juvenil.</li>
+                    <li><strong>Agosto 2023:</strong> Primera convocatoria con la Selección absoluta a los 16 años.</li>
+                    <li><strong>8 de septiembre de 2023:</strong> Debut con la absoluta frente a Georgia.</li>
+                    <li><strong>Récord:</strong> jugador más joven en debutar con España.</li>
+                    <li><strong>Récord:</strong> goleador más joven en la historia de la selección.</li>
+                    <li><strong>Finales de 2023:</strong> Participación continua en partidos de clasificación.</li>
+                    <li><strong>Eurocopa 2024 (Alemania):</strong> Revelación del campeonato.</li>
+                    <li><strong>2025:</strong> Figura habitual en las convocatorias.</li>
+                </ol>
+            </article>
+        </section>
+
+        <hr>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Si deseas ponerte en contacto con Lamine Yamal o su equipo de representación, puedes utilizar el siguiente formulario:</p>
+            <form>
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre">
+                    <br/>
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email">
+                    <br/>
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje"></textarea>
+                    <br/><br/>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <center><p>2025 Biografía de Lamine Yamal. Página realizada para Introducción al Desarrollo Web.</p></center>
+    </footer>
