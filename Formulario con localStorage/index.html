@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulario LocalStorage</title>
+    </head>
+    <body>
+        <form id="miFormulario">
+            <label>Nombre: 
+            <input type="text" id="nombre" required>
+            </label>
+            <br><br>
+            <label>Edad: 
+            <input type="number" id="edad" required>
+            </label>
+            <br><br>
+            <label>Día favorito: 
+                <select id="dia" required>
+                    <option value="">-- Selecciona --</option>
+                    <option>Lunes</option>
+                    <option>Martes</option>
+                    <option>Miércoles</option>
+                    <option>Jueves</option>
+                    <option>Viernes</option>
+                    <option>Sábado</option>
+                    <option>Domingo</option>
+                </select>
+            </label>
+            <br><br>
+            <button type="submit">Guardar</button>
+        </form>
+
+        <p id="mensaje"></p>
+
+        <script>
+            const form = document.getElementById("miFormulario");
+            const mensaje = document.getElementById("mensaje");
+
+            // Cuando la página carga, revisa localStorage
+            window.onload = function() {
+                const data = localStorage.getItem("usuario");
+                if (data) {
+                    const usuario = JSON.parse(data);
+                    mensaje.textContent = `Hola ${usuario.nombre}, tú tienes ${usuario.edad} años y tu día favorito es ${usuario.dia}`;
+                } else {
+                    mensaje.textContent = "";
+                }
+            };
+
+            // Al enviar el formulario
+            form.addEventListener("submit", function(e) {
+                e.preventDefault();
+                const usuario = {
+                    nombre: document.getElementById("nombre").value,
+                    edad: document.getElementById("edad").value,
+                    dia: document.getElementById("dia").value
+                };
+                localStorage.setItem("usuario", JSON.stringify(usuario));
+                mensaje.textContent = `Hola ${usuario.nombre}, tú tienes ${usuario.edad} años y tu día favorito es ${usuario.dia}`;
+                form.reset();
+            });
+        </script>
+    </body>
+</html>
